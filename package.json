@@ -1,0 +1,57 @@
+{
+  "name": "newbucket",
+  "version": "0.0.0",
+  "description": "A project to create a bucket",
+  "homepage": "https://www.carlosrv125.com",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "author": {
+    "email": "carlosrv125@icloud.com",
+    "name": "Carlos Ramirez"
+  },
+  "repository": {
+    "url": "https://github.com/carlosrv999/myawesomebucket",
+    "type": "git"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "build": "jsii -vvv",
+    "build:watch": "jsii -w",
+    "package": "jsii-pacmak -vvv"
+  },
+  "keywords": [
+    "jsii",
+    "cdk"
+  ],
+  "jsii": {
+    "outdir": "dist",
+    "targets": {
+      "python": {
+        "distName": "foo.bar",
+        "module": "foo.bar"
+      },
+      "java": {
+        "package": "foo.bar",
+        "maven": {
+          "groupId": "com.foo",
+          "artifactId": "bar"
+        }
+      },
+      "dotnet": {
+        "namespace": "Foo.Bar",
+        "packageId": "Foo.Bar"
+      }
+    }
+  },
+  "devDependencies": {
+    "aws-cdk-lib": "^2.66.1",
+    "constructs": "^10.1.261",
+    "jsii": "^1.76.0",
+    "jsii-pacmak": "^1.76.0"
+  },
+  "peerDependencies": {
+    "aws-cdk-lib": "^2.66.1",
+    "constructs": "^10.1.261"
+  }
+}
